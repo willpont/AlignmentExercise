@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <title>Before we get started</title>
+  <meta charset="utf-8">
+  <style>
+  .instructions {
+    color: grey;
+    font-style: italic;
+    clear: both;
+  }
+  #rightpara {
+    text-align:right;
+  }
+  #centerpara {
+    text-align:center;
+  }
+  #justpara {
+    text-align:justify;
+  }
+  #rightfloat img {
+    float: right;
+  }
+  #leftfloat img {
+    float: left;
+  }
+  </style>
+</head>
+<body>
+  <h1>Before we get started...</h1>
+  The exercise today asks you to work with alignment. In addition to the box model properties we discussed Wednesday, you will need the properties below to complete the assignment. Rather than ask you to apply these properties, I simply demonstrate them below. Check the style section to see how each property is employed.
+  <section id="alignment">
+    <h2>Alignment</h2>
+    <p class="instructions">
+      We use the text-align property to define how text is aligned in a paragraph. By default, text is left aligned, like this:
+    <p class="instructions">
+    <p id="defaultpara">
+      For three days Dorothy heard nothing from Oz. These were sad days for the little girl, although her friends were all quite happy and contented. The Scarecrow told them there were wonderful thoughts in his head; but he would not say what they were because he knew no one could understand them but himself. When the Tin Woodman walked about he felt his heart rattling around in his breast; and he told Dorothy he had discovered it to be a kinder and more tender heart than the one he had owned when he was made of flesh. The Lion declared he was afraid of nothing on earth, and would gladly face an army or a dozen of the fierce Kalidahs.
+    </p>
+    <p class="instructions">
+      Setting text-align to "right" right aligns text.
+    </p>
+    <p id="rightpara">
+      For three days Dorothy heard nothing from Oz. These were sad days for the little girl, although her friends were all quite happy and contented. The Scarecrow told them there were wonderful thoughts in his head; but he would not say what they were because he knew no one could understand them but himself. When the Tin Woodman walked about he felt his heart rattling around in his breast; and he told Dorothy he had discovered it to be a kinder and more tender heart than the one he had owned when he was made of flesh. The Lion declared he was afraid of nothing on earth, and would gladly face an army or a dozen of the fierce Kalidahs.
+    </p>
+    <p class="instructions">
+      Setting text-align to "center" centers text. As per our reading, BE CAREFUL WHEN USING THIS. (Notice how ragged and silly the paragraph below looks).
+    </p>
+    <p id="centerpara">
+      For three days Dorothy heard nothing from Oz. These were sad days for the little girl, although her friends were all quite happy and contented. The Scarecrow told them there were wonderful thoughts in his head; but he would not say what they were because he knew no one could understand them but himself. When the Tin Woodman walked about he felt his heart rattling around in his breast; and he told Dorothy he had discovered it to be a kinder and more tender heart than the one he had owned when he was made of flesh. The Lion declared he was afraid of nothing on earth, and would gladly face an army or a dozen of the fierce Kalidahs.
+    </p>
+    <p class="instructions">
+      Finally, setting text-align to "justify" attempts to create justified text. I say "attempts" because it can act a bit odd at times. Use with caution. It will also ignore any line of text that isn't nearly full page-width.
+    </p>
+    <p id="justpara">
+      For three days Dorothy heard nothing from Oz. These were sad days for the little girl, although her friends were all quite happy and contented. The Scarecrow told them there were wonderful thoughts in his head; but he would not say what they were because he knew no one could understand them but himself. When the Tin Woodman walked about he felt his heart rattling around in his breast; and he told Dorothy he had discovered it to be a kinder and more tender heart than the one he had owned when he was made of flesh. The Lion declared he was afraid of nothing on earth, and would gladly face an army or a dozen of the fierce Kalidahs.
+    </p>
+  </section>
+  <section id="floats">
+    <h2>Floats</h2>
+    <p class="instructions">
+      We can float an element to move it out of the usual left-to-right, top-to-bottom progression of page content (this is called the <em>normal flow</em>). We will learn more about this later, when we work on proximity, but for now the example below should suffice to explain. In the next paragraph, the image is included in the normal flow. Notice how it aligns with the first line of text, almost as if the image was simply a very large character.</p>
+    </p>
+    <p id="nofloat">
+      Then came the night of the first falling star. It was seen early in the morning, rushing over Winchester eastward,<img src="images/cranes.jpg" alt="Seattle Cranes"> a line of flame high in the atmosphere. Hundreds must have seen it, and taken it for an ordinary falling star. Albin described it as leaving a greenish streak behind it that glowed for some seconds. Denning, our greatest authority on meteorites, stated that the height of its first appearance was about ninety or one hundred miles. It seemed to him that it fell to earth about one hundred miles east of him.
+    </p>
+    <p class="instructions">
+      We can use the float property to "float" an element out of the normal flow to either the left or right. Notice what happens if we float the image left. The image moves to the far left of its container, leaving the normal flow, and the text wraps around to the right.</p>
+    </p>
+    <p id="leftfloat">
+      Then came the night of the first falling star. It was seen early in the morning, rushing over Winchester eastward,<img src="images/cranes.jpg" alt="Seattle Cranes"> a line of flame high in the atmosphere. Hundreds must have seen it, and taken it for an ordinary falling star. Albin described it as leaving a greenish streak behind it that glowed for some seconds. Denning, our greatest authority on meteorites, stated that the height of its first appearance was about ninety or one hundred miles. It seemed to him that it fell to earth about one hundred miles east of him.
+    </p>
+    <p class="instructions">
+      If we float to the right, the image moves to the far right, and the text wraps to the left.</p>
+    </p>
+    <p id="rightfloat">
+      Then came the night of the first falling star. It was seen early in the morning, rushing over Winchester eastward,<img src="images/cranes.jpg" alt="Seattle Cranes"> a line of flame high in the atmosphere. Hundreds must have seen it, and taken it for an ordinary falling star. Albin described it as leaving a greenish streak behind it that glowed for some seconds. Denning, our greatest authority on meteorites, stated that the height of its first appearance was about ninety or one hundred miles. It seemed to him that it fell to earth about one hundred miles east of him.
+    </p>
+    <p class="instructions">
+    If we want elements to stop wrapping around a floating element, we use the "clear" property. Notice how I've added the "clear" property to the instructions paragraph for this page. Try removing this and see what happens. </p>
+    </p>
+    <p class="instructions">
+    Once you have a sense of how text-alignment and floats work, open the exercise file. You will find a menu for an entirely hypothetical food truck (in no way the truck Andy would run on weekends if he hit the lottery). Right now it has a terrible, centered format. Work with your group to use text-alignment, the box model properies (margins, padding, and border), color, and fonts to give it a better design that employs the principle of <em>alignment</em>!
+    </p>
+  </section>
+</body>
+</html>
